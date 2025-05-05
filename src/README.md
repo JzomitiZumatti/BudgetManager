@@ -1,15 +1,20 @@
-# Budget Manager – Stage 1: Count my money
+# Budget Manager – Stage 3: Oh the things you can buy
 
 ---
 
 ## 🧠 Description
 
-First, let’s implement the counting of your purchases. It’s much easier to analyze when your expenses are presented as a list. Read data from the console and at the end show the list of all purchases and its total amount.
-It should be displayed as follows: `Total: $23.00`
+To better control the expenses, we need to categorize our purchases. It helps to see how exactly your budget is distributed: you may be actually quite surprised!
 
-Your program should process every line the user inputs. To end the input, the user should type End-of-file symbol that tells your operating system that no more input will be provided. It's `Ctrl+D` on Linux and Mac and `Ctrl+Z` on Windows. Don't be scared: you don’t have to implement it yourself, this is a special built-in hot-key that gives the command to stop input. See for yourself!
+Implement a function that assigns a purchase to a specific category.
 
-As a programmer, you can implement `.hasNext()` or `.hasNextLine()` methods of the `Scanner` class in your program to determine when there is no input available.
+The program should have the following categories:
+ - Food
+ - Clothes
+ - Entertainment
+ - Other
+
+The function allows you to output the shopping list by type. After selecting the action of showing the list of expenses, offer to show either a certain category or a general list. At the end of each list, print the total sum of purchases that are on the list.
 
 ---
 
@@ -17,19 +22,111 @@ As a programmer, you can implement `.hasNext()` or `.hasNextLine()` methods of t
 
 The greater-than symbol followed by a space (`>`) represents the user input.
 
-Example 1:
+Example:
 
 ```text
-> Almond 250gm $35.43
-> LEGO DUPLO Town Farm Animals $10.10
-> Sensodyne Pronamel Toothpaste $19.74
-> Hershey's milk chocolate bars $8.54
-> Gildan LT $8.61
-Almond 250gm $35.43
-LEGO DUPLO Town Farm Animals $10.10
-Sensodyne Pronamel Toothpaste $19.74
-Hershey's milk chocolate bars $8.54
-Gildan LT $8.61
+Choose your action:
+1) Add income
+2) Add purchase
+3) Show list of purchases
+4) Balance
+0) Exit
+> 3
 
-Total: $82.42
+The purchase list is empty!
+
+Choose your action:
+1) Add income
+2) Add purchase
+3) Show list of purchases
+4) Balance
+0) Exit
+> 2
+
+Choose the type of purchase
+1) Food
+2) Clothes
+3) Entertainment
+4) Other
+5) Back
+> 1
+
+Enter purchase name:
+> Milk
+Enter its price:
+> 3.5
+Purchase was added!
+
+Choose the type of purchase
+1) Food
+2) Clothes
+3) Entertainment
+4) Other
+5) Back
+> 5
+
+Choose your action:
+1) Add income
+2) Add purchase
+3) Show list of purchases
+4) Balance
+0) Exit
+> 3
+
+Choose the type of purchases
+1) Food
+2) Clothes
+3) Entertainment
+4) Other
+5) All
+6) Back
+> 4
+
+Other:
+The purchase list is empty!
+
+Choose the type of purchases
+1) Food
+2) Clothes
+3) Entertainment
+4) Other
+5) All
+6) Back
+> 1
+
+Food:
+Milk $3.50
+Total sum: $3.50
+
+Choose the type of purchases
+1) Food
+2) Clothes
+3) Entertainment
+4) Other
+5) All
+6) Back
+> 5
+
+All:
+Milk $3.50
+Total sum: $3.50
+
+Choose the type of purchases
+1) Food
+2) Clothes
+3) Entertainment
+4) Other
+5) All
+6) Back
+> 6
+
+Choose your action:
+1) Add income
+2) Add purchase
+3) Show list of purchases
+4) Balance
+0) Exit
+> 0
+
+Bye!
 ```
