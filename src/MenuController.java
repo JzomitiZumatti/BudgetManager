@@ -11,7 +11,7 @@ public class MenuController {
 
         actions.put(1, new AddIncomeAction(financeManager, consoleIO));
         actions.put(2, new AddPurchaseAction(financeManager, consoleIO));
-        actions.put(3, new ShowPurchaseListAction(financeManager, consoleIO));
+        actions.put(3, new ShowCategoryPurchasesAction(financeManager, consoleIO));
         actions.put(4, new ShowBalanceAction(financeManager, consoleIO));
         actions.put(0, new ExitAction(consoleIO));
     }
@@ -20,7 +20,7 @@ public class MenuController {
         boolean isOn = true;
 
         while (isOn) {
-            consoleIO.printMenu();
+            consoleIO.printMainMenu();
             String input = consoleIO.readLine();
 
             int choice;

@@ -13,9 +13,26 @@ public enum Message {
     MSG_3("Enter purchase name:"),
     MSG_4("Enter its price:"),
     MSG_5("Purchase was added!"),
-    MSG_6("The purchase list is empty"),
+    MSG_6("The purchase list is empty!"),
     MSG_7("Wrong option! Try again:"),
-    MSG_8("Bye!");
+    MSG_8("Bye!"),
+    MSG_9("""
+            Choose the type of purchase
+            1) Food
+            2) Clothes
+            3) Entertainment
+            4) Other
+            5) Back
+            """),
+    MSG_10("""
+            Choose the type of purchases
+            1) Food
+            2) Clothes
+            3) Entertainment
+            4) Other
+            5) All
+            6) Back
+            """);
 
     private final String message;
 
