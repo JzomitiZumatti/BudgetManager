@@ -1,20 +1,16 @@
-# Budget Manager – Stage 3: Oh the things you can buy
+# Budget Manager – Stage 4: Memorable purchases
 
 ---
 
 ## 🧠 Description
 
-To better control the expenses, we need to categorize our purchases. It helps to see how exactly your budget is distributed: you may be actually quite surprised!
+What's the point of counting the money if the results are lost and forgotten once you close the program? To allow for some long-term budget planning, we need to save purchases to file. Add items Save and Load to the menu.
 
-Implement a function that assigns a purchase to a specific category.
+`Save` should save all purchases to the file.
 
-The program should have the following categories:
- - Food
- - Clothes
- - Entertainment
- - Other
+`Load` should load all purchases from the file.
 
-The function allows you to output the shopping list by type. After selecting the action of showing the list of expenses, offer to show either a certain category or a general list. At the end of each list, print the total sum of purchases that are on the list.
+Use the `purchases.txt` file to store purchases.
 
 ---
 
@@ -30,16 +26,22 @@ Choose your action:
 2) Add purchase
 3) Show list of purchases
 4) Balance
+5) Save
+6) Load
 0) Exit
-> 3
+> 1
 
-The purchase list is empty!
+Enter income:
+> 1000
+Income was added!
 
 Choose your action:
 1) Add income
 2) Add purchase
 3) Show list of purchases
 4) Balance
+5) Save
+6) Load
 0) Exit
 > 2
 
@@ -52,9 +54,9 @@ Choose the type of purchase
 > 1
 
 Enter purchase name:
-> Milk
+> Almond 250g
 Enter its price:
-> 3.5
+> 35.43
 Purchase was added!
 
 Choose the type of purchase
@@ -70,61 +72,20 @@ Choose your action:
 2) Add purchase
 3) Show list of purchases
 4) Balance
+5) Save
+6) Load
 0) Exit
-> 3
-
-Choose the type of purchases
-1) Food
-2) Clothes
-3) Entertainment
-4) Other
-5) All
-6) Back
-> 4
-
-Other:
-The purchase list is empty!
-
-Choose the type of purchases
-1) Food
-2) Clothes
-3) Entertainment
-4) Other
-5) All
-6) Back
-> 1
-
-Food:
-Milk $3.50
-Total sum: $3.50
-
-Choose the type of purchases
-1) Food
-2) Clothes
-3) Entertainment
-4) Other
-5) All
-6) Back
 > 5
 
-All:
-Milk $3.50
-Total sum: $3.50
-
-Choose the type of purchases
-1) Food
-2) Clothes
-3) Entertainment
-4) Other
-5) All
-6) Back
-> 6
+Purchases were saved!
 
 Choose your action:
 1) Add income
 2) Add purchase
 3) Show list of purchases
 4) Balance
+5) Save
+6) Load
 0) Exit
 > 0
 

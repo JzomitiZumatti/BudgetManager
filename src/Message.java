@@ -5,6 +5,8 @@ public enum Message {
             2) Add purchase
             3) Show list of purchases
             4) Balance
+            5) Save
+            6) Read
             0) Exit
             """),
     MSG_01("Price cannot be negative"),
@@ -32,7 +34,11 @@ public enum Message {
             4) Other
             5) All
             6) Back
-            """);
+            """),
+    MSG_11("Purchases were saved!"),
+    MSG_12("An error occurred while saving the file."),
+    MSG_13("An error occurred while reading the file."),
+    MSG_14("Purchases were loaded!");
 
     private final String message;
 

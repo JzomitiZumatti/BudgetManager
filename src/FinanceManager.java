@@ -33,8 +33,8 @@ public class FinanceManager {
 
     public List<Purchase> getPurchases() {
         List<Purchase> allPurchases = new ArrayList<>();
-        for (List<Purchase> purchaseList : purchases.values()) {
-            allPurchases.addAll(purchaseList);
+        for (List<Purchase> purchase : purchases.values()) {
+            allPurchases.addAll(purchase);
         }
         return allPurchases;
     }
@@ -46,4 +46,6 @@ public class FinanceManager {
     public double getBalance() {
         return balance;
     }
+
+
 }
