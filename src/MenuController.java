@@ -15,6 +15,7 @@ public class MenuController {
         actions.put(4, new ShowBalanceAction(financeManager, consoleIO));
         actions.put(5, new SaveToFileAction(financeManager, consoleIO));
         actions.put(6, new ReadFromFileAction(financeManager, consoleIO));
+        actions.put(7, new SortAction(financeManager, consoleIO));
         actions.put(0, new ExitAction(consoleIO));
     }
 
