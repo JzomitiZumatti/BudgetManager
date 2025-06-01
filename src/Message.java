@@ -7,6 +7,7 @@ public enum Message {
             4) Balance
             5) Save
             6) Read
+            7) Analyze (Sort)
             0) Exit
             """),
     MSG_01("Price cannot be negative"),
@@ -38,7 +39,21 @@ public enum Message {
     MSG_11("Purchases were saved!"),
     MSG_12("An error occurred while saving the file."),
     MSG_13("An error occurred while reading the file."),
-    MSG_14("Purchases were loaded!");
+    MSG_14("Purchases were loaded!"),
+    MSG_15("""
+            How do you want to sort?
+            1) Sort all purchases
+            2) Sort by type
+            3) Sort certain type
+            4) Back
+            """),
+    MSG_16("""
+            Choose the type of purchase
+            1) Food
+            2) Clothes
+            3) Entertainment
+            4) Other
+            """);
 
     private final String message;
 
